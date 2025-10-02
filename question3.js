@@ -38,7 +38,7 @@ for(let i=0; i<numOfFiles;i++){
     console.log(file);
 }
 
-if(fs.existsSync(dir)){
+if(fs.existsSync(dir)){//Check if directory exists
     const logFiles = fs.readdirSync(dir);//read all files
 
     if(logFiles.length > 0){//Check if there're files, then delete
